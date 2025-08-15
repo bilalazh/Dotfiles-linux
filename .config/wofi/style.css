@@ -1,0 +1,209 @@
+
+
+/* Root Element will all the colors */
+html:not(.style-scope)
+{
+  --bg0-dh: #1d2021;
+  --bg-dark-new: #1F1E1D;
+  --text-normal: #ffd29c;
+  --shadow-bg: #1d1b1a;
+  --bg1-dark: #3c3836;
+  --bg-dark: #282828;
+  /* =====================================================================
+     Section: THEME VARIABLES & TOKENS
+     Purpose: All color tokens and shared design scales used throughout
+              the theme. Do not rename tokens without updating references.
+     ===================================================================== */
+  --bg2-dark: #504945;
+  --bg3-dark: #665c54;
+  --bg4-dark: #7c6f64;
+  --bg5-dark: #928374;
+  --bg_visual: #503946;
+  --bg_red: #cc241d;
+  --bg_green: #98971a;
+  --bg_blue: #458588;
+  --bg_yellow: #d79921;
+  --shadow: #16181a;
+  --shadow-var1: #17191b;
+  --shadow-cur: #1a1b1d;
+  --fg-dark: #ebdbb2;
+  --grey0-dark: #7f897d;
+  --grey1-dark: #859289;
+  --grey2-dark: #9aa79d;
+  --faded-red: #fb4934;
+  --faded-orange: #fe8019;
+  --faded-yellow: #fabd2f;
+  --faded-green: #b8bb26;
+  --faded-aqua: #8ec07c;
+  --faded-blue: #83a598;
+  --faded-purple: #d3869b;
+  --dim-red: #cc241d;
+  --dim-orange: #d65d0e;
+  --dim-yellow: #d79921;
+  --dim-green: #98971a;
+  --dim-aqua: #689d6a;
+  --dim-blue: #458588;
+  --dim-purple: #b16286;
+  --bg0-light: #f0edd8;
+  --bg1-light: #f6f1dd;
+  --bg-light: #fdf6e3;
+  --bg2-light: #f3efda;
+  --bg3-light: #edead5;
+  --bg4-light: #e4e1cd;
+  --bg5-light: #dfdbc8;
+  --grey0-light: #a4ad9e;
+  --grey1-light: #939f91;
+  --grey2-light: #879686;
+  --shadow-light: #3c474d20;
+  --text-offwhite: #fbf1c7;
+  --text-offyellowish: #f2e5bc;
+  --text-white: #f9f5d7;
+  --text-offwhite-faded: #ebdbb2;
+  --text--faded: #d5c4a1;
+  --text--veryfade: #928374;
+  --bg_visual_light: #eaedc8;
+  --bg_red_light: #fbe3da;
+  --bg_green_light: #f0f1d2;
+  --bg_blue_light: #e9f0e9;
+  --bg_yellow_light: #faedcd;
+  --fg-light: #5c6a72;
+  --light-red: #f85552;
+  --light-orange: #f57d26;
+  --light-yellow: #bf983d;
+  --light-green: #899c40;
+  --light-aqua: #569d79;
+  --light-blue: #5a93a2;
+  --light-purple: #b87b9d;
+  --light-dim-red: #f1706f;
+  --light-dim-orange: #f39459;
+  --light-dim-yellow: #e4b649;
+  --light-dim-green: #a4bb4a;
+  --light-dim-aqua: #6ec398;
+  --light-dim-blue: #6cb3c6;
+  --light-dim-purple: #e092be;
+  --dark-red: #9d0006;
+  --dark-green: #79740e;
+  --dark-yellow: #b57614;
+  --dark-blue: #076678;
+  --dark-purple: #8f3f71;
+  --dark-aqua: #427b58;
+  --dark-orange: #af3a03;
+}
+
+* {
+    transition: 0.2s;
+       
+}
+
+    /* using Bricoalge Grotesque here download from google fonts */
+/* installed like this /BricolageGrotesque_Condensed-Medium */
+
+window {
+
+    font-family: "Geist Mono";
+    font-weight: 500;
+    font-size: 13px;
+}
+window {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0px;
+    border: 3px solid #98971a;
+    /* this is more main window background only*/
+    background-color: rgba(40, 40, 40, 0.8);
+    backdrop-filter: blur(75px);
+
+    /* Making this less as an experiment  */
+    border-radius: 8px;
+}
+
+#input {
+    padding: 4px;
+    margin: 20px;
+    padding-left: 20px;
+    border: none;
+    color:var(--text-normal);
+    font-weight: bold;
+    background:var(--dark-aqua);
+    outline: none;
+    border-radius: 12px;
+    /* text alignment  */
+    text-align: center;
+}
+
+/* commented becuase no image is being passed  */
+/* 
+#input image {
+    color: #fff;
+} */
+
+#input:focus {
+    border: solid 2px var(--text-normal);
+    outline: none;
+}
+
+#inner-box {
+    margin: 20px;
+    margin-top: 0px;
+    border: none;
+    color: var(--text-normal);
+    border-radius: 16px;
+}
+
+#inner-box * {
+    transition: none;
+}
+
+#outer-box {
+    margin: 0px;
+    border: none;
+    padding: 0px;
+    border-radius: 16px;
+}
+
+#scroll {
+    margin-top: 5px;
+    border: none;
+    border-radius: 16px;
+    margin-bottom: 5px;
+
+}
+
+#text:selected {
+    color: var(--text-normal);
+    font-weight: bold;
+}
+
+#img {
+    margin-right: 20px;
+    background: transparent;
+}
+
+#text {
+    margin: 0px;
+    border: none;
+    padding: 0px;
+    text-align: center;
+background: transparent;
+}
+
+
+/* entry point for the app  */
+#entry {
+    margin: 0px;
+    border: none;
+    border-radius: 6px;
+    background-color: var(--dark-green);
+    min-height: 24px;
+    font-weight: bold;
+}
+
+#entry:selected {
+    outline: none;
+    margin: 0px;
+    border: none;
+    border-radius: 6px;
+    background: var(--dark-green);
+}
