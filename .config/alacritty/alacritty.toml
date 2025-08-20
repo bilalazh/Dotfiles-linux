@@ -10,7 +10,7 @@ decorations_theme_variant = "Light" # "Dark"
 startup_mode = "Maximized"
 
 # Blur Effects (Only on kde wayland) -> investigate this more and add if needed
-opacity = 0.8
+opacity = 0.9
 blur = true
 
 
