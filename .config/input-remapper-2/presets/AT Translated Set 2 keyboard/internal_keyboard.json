@@ -1,0 +1,27 @@
+[
+    {
+        "input_combination": [
+            {
+                "type": 1,
+                "code": 58,
+                "origin_hash": "18ab2ccaa82365e4b599de26f5f8fce3"
+            }
+        ],
+        "target_uinput": "keyboard",
+        "output_symbol": "Control_L",
+        "mapping_type": "key_macro"
+    },
+    {
+        "input_combination": [
+            {
+                "type": 1,
+                "code": 42,
+                "origin_hash": "18ab2ccaa82365e4b599de26f5f8fce3"
+            }
+        ],
+        "target_uinput": "keyboard",
+        "output_symbol": "if_tap(k(Escape) , h(Shift_L) ,100 ) ",
+        "name": "",
+        "mapping_type": "key_macro"
+    }
+]
